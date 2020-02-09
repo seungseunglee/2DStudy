@@ -1,0 +1,7 @@
+C:\2020-1\study\2DStudy\Study\bin\Debug\Study.exe.config
+C:\2020-1\study\2DStudy\Study\bin\Debug\Study.exe
+C:\2020-1\study\2DStudy\Study\bin\Debug\Study.pdb
+C:\2020-1\study\2DStudy\Study\obj\Debug\Study.csproj.CoreCompileInputs.cache
+C:\2020-1\study\2DStudy\Study\obj\Debug\Study.exe
+C:\2020-1\study\2DStudy\Study\obj\Debug\Study.pdb
+C:\2020-1\study\2DStudy\Study\obj\Debug\Study.csprojAssemblyReference.cache
