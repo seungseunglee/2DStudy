@@ -17,9 +17,11 @@ namespace _2DStudy
     {
         //Screen dimension constants
         private static Character character = new Character();
+        private static double delay = 0.1;
         private const int SCREEN_WIDTH = 800;
         private const int SCREEN_HEIGHT = 480;
         private static bool CloseGame { get; set; }
+
         static void HandleEvents()
         {
             var events = Context.GetGameEvents();
@@ -35,17 +37,23 @@ namespace _2DStudy
                             if (e.Key == SDL.SDL_Keycode.SDLK_RIGHT)
                             {
                                 // 우측 이동
+                                delay = 0.05;
                                 character.runRight();
                             }
                             else if (e.Key == SDL.SDL_Keycode.SDLK_LEFT)
                             {
                                 // 왼쪽 이동
+                                delay = 0.05;
                                 character.runLeft();
                             }
                             else if (e.Key == SDL.SDL_Keycode.SDLK_UP)
                             {
                                 // 제자리에 서기
                                 character.stand();
+                            }
+                            else if (e.Key == SDL.SDL_Keycode.SDLK_SPACE)
+                            {
+                                // 점프 하기
                             }
                             else if (e.Key == SDL.SDL_Keycode.SDLK_ESCAPE)
                             {
@@ -83,58 +91,35 @@ namespace _2DStudy
             string baseDir = @"..\..\..\Resources\";
             Font font = Context.LoadFont(baseDir + "ConsolaMalgun.TTF", 16);
             Image grass = Context.LoadImage(baseDir + "grass.png");
-            //Image character = Context.LoadImage(baseDir + "animation_sheet.png");
             character.uploadImage(baseDir + "animation_sheet.png");
             Music music = Context.LoadMusic(baseDir + "background.mp3");
             music.PlayRepeat();
 
             Resources.Add(font);
             Resources.Add(grass);
-            //Resources.Add(character);
             Resources.Add(music);
 
             // 게임 루프
-            //var pos = new Vector2D(100, 80);
-            //int frame = 0;
             CloseGame = false;
-            //int posture = 1;    // animation_sheet.png 상 몇 번째 자세인가
-                                // 0:좌-뛰 1:우-뛰 2:좌-서 3:우-서
+                                
             while (CloseGame == false)
             {
+                delay = 0.1;
+
                 // 이벤트 처리
                 HandleEvents();
 
                 Context.ClearWindow();
 
-                /*// 좌로 갈 건가, 우로 갈 건가?
-                switch(posture)
-                {
-                    case 0: pos.x -= 5; break;
-                    case 1: pos.x += 5; break;
-                    default: break;
-                }*/
-
                 font.Render(100, 300, "Sample2", new Color(100, 25, 25));
                 grass.Render(Program.SCREEN_WIDTH / 2, 30);
-                //character.ClipRender(new Rectangle(frame * 100, posture * 100, 100, 100), pos);
-                //frame = (frame + 1) % 8;
+
                 character.move();
-                Context.UpdateWindow();
 
-                Context.Delay(0.1);
-                
-                
-                /*// 처음 지점 도달-> 우로 뛸 차례
-                if(pos.x < 0)
-                {
-                    posture = 1;
+                // 화면 바꿈
+                Context.UpdateWindow();     
 
-                }
-                // 끝 지점 도달-> 좌로 뛸 차례
-                else if(pos.x > 800)
-                {
-                    posture = 0;
-                }*/
+                Context.Delay(delay);
             }
 
             Context.CloseWindow();
