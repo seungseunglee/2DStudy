@@ -1,0 +1,9 @@
+C:\2020-1\study\2DStudy\2DStudy\bin\Release\2DStudy.exe.config
+C:\2020-1\study\2DStudy\2DStudy\bin\Release\2DStudy.exe
+C:\2020-1\study\2DStudy\2DStudy\bin\Release\2DStudy.pdb
+C:\2020-1\study\2DStudy\2DStudy\bin\Release\Jong2D.dll
+C:\2020-1\study\2DStudy\2DStudy\bin\Release\Jong2D.pdb
+C:\2020-1\study\2DStudy\2DStudy\obj\Release\2DStudy.csproj.CoreCompileInputs.cache
+C:\2020-1\study\2DStudy\2DStudy\obj\Release\2DStudy.csproj.CopyComplete
+C:\2020-1\study\2DStudy\2DStudy\obj\Release\2DStudy.exe
+C:\2020-1\study\2DStudy\2DStudy\obj\Release\2DStudy.pdb

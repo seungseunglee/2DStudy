@@ -28,7 +28,7 @@ namespace Study
             }
 
             // private int _b;
-            public int B { get; private set; }
+            public int B { get; /*private*/ set; }
 
             public int GetA() => a;
         }
@@ -40,7 +40,7 @@ namespace Study
 
             abc.B = 2;
             abc.B = -1;
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(abc.B);
         }
     }
 }

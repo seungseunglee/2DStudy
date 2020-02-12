@@ -33,6 +33,7 @@ namespace Study
 
     }
 
+
     public partial class T
     {
         public void Func2()

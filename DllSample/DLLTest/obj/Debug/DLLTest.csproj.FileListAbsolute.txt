@@ -1,0 +1,5 @@
+C:\2020-1\study\2DStudy\DllSample\DLLTest\bin\Debug\DLLTest.dll
+C:\2020-1\study\2DStudy\DllSample\DLLTest\bin\Debug\DLLTest.pdb
+C:\2020-1\study\2DStudy\DllSample\DLLTest\obj\Debug\DLLTest.csproj.CoreCompileInputs.cache
+C:\2020-1\study\2DStudy\DllSample\DLLTest\obj\Debug\DLLTest.dll
+C:\2020-1\study\2DStudy\DllSample\DLLTest\obj\Debug\DLLTest.pdb

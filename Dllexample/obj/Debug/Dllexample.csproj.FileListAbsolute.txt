@@ -1,0 +1,9 @@
+C:\2020-1\study\2DStudy\Dllexample\bin\Debug\Dllexample.exe.config
+C:\2020-1\study\2DStudy\Dllexample\bin\Debug\Dllexample.exe
+C:\2020-1\study\2DStudy\Dllexample\bin\Debug\Dllexample.pdb
+C:\2020-1\study\2DStudy\Dllexample\obj\Debug\Dllexample.csprojAssemblyReference.cache
+C:\2020-1\study\2DStudy\Dllexample\obj\Debug\Dllexample.csproj.CoreCompileInputs.cache
+C:\2020-1\study\2DStudy\Dllexample\obj\Debug\Dllexample.exe
+C:\2020-1\study\2DStudy\Dllexample\obj\Debug\Dllexample.pdb
+C:\2020-1\study\2DStudy\Dllexample\bin\Debug\DLLTest.dll
+C:\2020-1\study\2DStudy\Dllexample\obj\Debug\Dllexample.csproj.CopyComplete

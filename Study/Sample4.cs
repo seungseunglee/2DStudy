@@ -20,7 +20,7 @@ namespace Study
 
         static void Func(ref MyStruct s)
         {
-            s.a = 3;
+            s.a = 7;
         }
 
         // ref 는 참조만 넘기는 느낌
@@ -36,7 +36,7 @@ namespace Study
         static void Func3(out MyClass o)
         {
             o = new MyClass();
-            //o.a = 3;
+            o.a = 3;
         }
 
         static void Func4(out int o)
@@ -46,15 +46,16 @@ namespace Study
 
         static void Main(string[] args)
         {
-            //var s = new MyStruct();
-            //Func(ref s);
+            var s = new MyStruct();
+            Func(ref s);
+            Console.WriteLine(s.a);
 
-            //MyClass o;
-            //Func3(out o);
+            MyClass o;
+            Func3(out o);
 
             int t;
             Func4(out t);
-            Console.Write(t);
+            Console.WriteLine(t);
 
             Console.WriteLine(o.a);
         }

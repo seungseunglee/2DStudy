@@ -44,8 +44,13 @@ namespace Study
                 Func(a.Value);
             }
 
-            int c = 0; // 내부적으로 object 만들어서 넣음 -> Boxing
-            Boxing(c); // 성능은 안좋다. 다음기회에
+            int c = 0;
+            Boxing(c);  // 내부적으로 object 만들어서 넣음 -> Boxing
+                        // 성능은 안좋다. 다음기회에
+
+                        // 박싱: 값 형식을 참조 형식으로 변환
+                        // 언박싱: 참조 형식을 값 형식으로 변환
+
 
             Console.WriteLine("Hello World!");
         }
