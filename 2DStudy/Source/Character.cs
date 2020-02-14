@@ -15,11 +15,12 @@ namespace _2DStudy
         public Vector2D pos = new Vector2D();
         private int posture { get; set; }   // 0:좌-뛰 1:우-뛰 2:좌-서 3:우-서
         private int frame { get; set; }
+        private double adjustDelay;
 
 
-        public Character()
+        public Character(int x, int y)
         {
-            pos = new Vector2D(100, 80);
+            pos = new Vector2D(x, y);
             frame = 0;
             posture = 1;
         }
@@ -42,6 +43,7 @@ namespace _2DStudy
             posture = 1;
         }
 
+        // 제자리에 서기
         public void stand()
         {
             switch(posture)
@@ -58,6 +60,7 @@ namespace _2DStudy
 
         public void jump()
         {
+            pos.y += STEP;
 
         }
 

@@ -46,10 +46,10 @@ C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\zlib1.dll
 C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\2DStudy.exe.config
 C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\2DStudy.exe
 C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\2DStudy.pdb
-C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\Jong2D.dll
 C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\Jong2D.pdb
 C:\2020-1\C#\2DStudy\2DStudy\obj\x64\Debug\2DStudy.csprojAssemblyReference.cache
 C:\2020-1\C#\2DStudy\2DStudy\obj\x64\Debug\2DStudy.csproj.CoreCompileInputs.cache
 C:\2020-1\C#\2DStudy\2DStudy\obj\x64\Debug\2DStudy.csproj.CopyComplete
 C:\2020-1\C#\2DStudy\2DStudy\obj\x64\Debug\2DStudy.exe
 C:\2020-1\C#\2DStudy\2DStudy\obj\x64\Debug\2DStudy.pdb
+C:\2020-1\C#\2DStudy\2DStudy\bin\x64\Debug\Jong2D.dll
