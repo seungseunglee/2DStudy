@@ -134,10 +134,12 @@ namespace _2DStudy
             Resources.Add(music);
 
             // 게임 루프
+            int frame = 0;
             CloseGame = false;
                                 
             while (CloseGame == false)
             {
+                frame++;
                 adjustDelay = 0;
 
                 // 이벤트 처리
@@ -146,7 +148,7 @@ namespace _2DStudy
                 Context.ClearWindow();
 
                 font.Render(100, 300, "Sample", new Color(100, 25, 25));
-                background[0].Render(Program.SCREEN_WIDTH / 2, Program.SCREEN_HEIGHT / 2, new Size2D(Program.SCREEN_WIDTH, Program.SCREEN_HEIGHT));
+                background[(frame/100)%4].Render(Program.SCREEN_WIDTH / 2, Program.SCREEN_HEIGHT / 2, new Size2D(Program.SCREEN_WIDTH, Program.SCREEN_HEIGHT));
                 grass.Render(Program.SCREEN_WIDTH / 2, 30);
 
                 for (int i = 0; i < 1/*character.Length*/; i++)
