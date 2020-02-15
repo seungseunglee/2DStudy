@@ -28,7 +28,7 @@ namespace Study
 
         static void SFunc()
         {
-            v = 2;
+            v = 2; // 반갑습니다.
         }
 
     }
